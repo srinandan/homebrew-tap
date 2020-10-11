@@ -2,16 +2,16 @@
 class Apigeecli < Formula
   desc ""
   homepage "https://github.com/srinandan/apigeecli"
-  version "1.91"
+  version "1.92"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/srinandan/apigeecli/releases/download/v1.91/apigeecli_v1.91_Darwin_x86_64.zip", :using => CurlDownloadStrategy
-    sha256 "77641d760e3a5e37c96b7056a54d2dc85871a9d1e7f5b57d44be518a7f814663"
+    url "https://github.com/srinandan/apigeecli/releases/download/v1.92/apigeecli_v1.92_Darwin_x86_64.zip", :using => CurlDownloadStrategy
+    sha256 "c5d51dc1fede10fa11b8b1151ab66316af2fd9b52d92eb890226b4c0ee1f6d91"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.91/apigeecli_v1.91_Linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "cf42535d765eea588f26b2d90f8ce8405e0fe998245f020b0683e0447f7f8d5b"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.92/apigeecli_v1.92_Linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "2afaebe054abcea3f1102ab5d7e6efb6316339261c392eb9a7a2163e054478f4"
     end
   end
 
