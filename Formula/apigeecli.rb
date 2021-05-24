@@ -5,24 +5,24 @@
 class Apigeecli < Formula
   desc ""
   homepage "https://github.com/srinandan/apigeecli"
-  version "1.98"
+  version "1.99"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/srinandan/apigeecli/releases/download/v1.98/apigeecli_v1.98_Darwin_x86_64.zip", :using => CurlDownloadStrategy
-    sha256 "a1d937e05943e457c7a6d4359aae1fd35808d62532f6869cba3d154f91d272bb"
+    url "https://github.com/srinandan/apigeecli/releases/download/v1.99/apigeecli_v1.99_Darwin_x86_64.zip", :using => CurlDownloadStrategy
+    sha256 "c383cc839c0026e550867352f92156799a64c318c73e6999b5c0dbc41242b9f3"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/srinandan/apigeecli/releases/download/v1.98/apigeecli_v1.98_Darwin_arm64.zip", :using => CurlDownloadStrategy
-    sha256 "053ef2e1199ed5f61beb2d88e3bbee497f1b202d3b5f6895b538afeb35a15592"
+    url "https://github.com/srinandan/apigeecli/releases/download/v1.99/apigeecli_v1.99_Darwin_arm64.zip", :using => CurlDownloadStrategy
+    sha256 "d61b0a460e422067ae086151f8211f2afa3f8ec562a08c64bd36cef44eb546c8"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/srinandan/apigeecli/releases/download/v1.98/apigeecli_v1.98_Linux_x86_64.zip", :using => CurlDownloadStrategy
-    sha256 "841e7bd0948de75f93a24e20dc63de4b1ccbf68d0ffdd62738fc573ce7e4f0d0"
+    url "https://github.com/srinandan/apigeecli/releases/download/v1.99/apigeecli_v1.99_Linux_x86_64.zip", :using => CurlDownloadStrategy
+    sha256 "7d444f60c2559a2493b8c3d596eb7df55e16f71100a3728803808818ccc0917d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/srinandan/apigeecli/releases/download/v1.98/apigeecli_v1.98_Linux_arm64.zip", :using => CurlDownloadStrategy
-    sha256 "e9f0a5443d5754c32c4611a488c75eb52adb738dae0e6b50e5eea97eebe45de0"
+    url "https://github.com/srinandan/apigeecli/releases/download/v1.99/apigeecli_v1.99_Linux_arm64.zip", :using => CurlDownloadStrategy
+    sha256 "bbbf61b506273e8ea91ab45247de9b25425b65166d16f761aeebe248f7a8c7db"
   end
 
   def install
