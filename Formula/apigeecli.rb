@@ -5,28 +5,28 @@
 class Apigeecli < Formula
   desc ""
   homepage "https://github.com/srinandan/apigeecli"
-  version "1.100"
+  version "1.101"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.100/apigeecli_v1.100_Darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "5cbeec75c9468a79a70e7ea1c53cf47830e6560a682f274f737dabd92db20412"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.101/apigeecli_v1.101_Darwin_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "7586b3478008fd0bc29366739f236e2ac38635fc6bcd278df3044349cf5b7187"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.100/apigeecli_v1.100_Darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "a08cdd3bc8274f896bc1055aff61fa452674941e628cae7fcc3778aab19684c1"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.101/apigeecli_v1.101_Darwin_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "c650938f03475ae86868ceeb5234851057822cdee8f51f9e2093a0cd369850b2"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.100/apigeecli_v1.100_Linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "db7fe48fa242419c509485f379c9dcdabc25f75307ab4945c857ba73afa10150"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.101/apigeecli_v1.101_Linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "164918328858ea726dc93d2db24a6e83762fc9bece5212dc6e0fc424a3cbcdc0"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.100/apigeecli_v1.100_Linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "abc57aafc4654050d0d6cc85e636e6a9ae07935292073074bce32003ab0784ab"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.101/apigeecli_v1.101_Linux_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "db540937bed2594c9dd02b32da6aee3b1f5ecca417fb7a78fb7b69b6081b15bc"
     end
   end
 
