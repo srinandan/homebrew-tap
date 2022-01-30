@@ -5,20 +5,20 @@
 class Apigeecli < Formula
   desc ""
   homepage "https://github.com/srinandan/apigeecli"
-  version "1.106-beta.0"
+  version "1.106-beta.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.106-beta.0/apigeecli_v1.106-beta.0_Darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "fb7369e0ab7eefc822b866a5cd53309a0e226ef56e5ad685533433981cd742eb"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.106-beta.1/apigeecli_v1.106-beta.1_Darwin_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "da5a9f2eb76f0f274ac9e564ab316368ff3bd7e3b471b0e121324c466c2fb9c3"
 
       def install
         bin.install "apigeecli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.106-beta.0/apigeecli_v1.106-beta.0_Darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "c0242ccbeaac97b0ba309c736e7b29da9a4b2f2c22f6385fc0c81732bf9aebf7"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.106-beta.1/apigeecli_v1.106-beta.1_Darwin_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "7545c168364a1552bf072f7f7bd2554094db909a621703ef4b9f29fa89a0a4eb"
 
       def install
         bin.install "apigeecli"
@@ -28,16 +28,16 @@ class Apigeecli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.106-beta.0/apigeecli_v1.106-beta.0_Linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "231cfa0ad893b9dc901e5693f64ec755ea9e422a6f920d4fe3d94b346c96bd61"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.106-beta.1/apigeecli_v1.106-beta.1_Linux_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "39eeecaa900a581e74bb3ff300ad1ffe095257809f409bab124e9ab2d2a1f877"
 
       def install
         bin.install "apigeecli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/srinandan/apigeecli/releases/download/v1.106-beta.0/apigeecli_v1.106-beta.0_Linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "18eb69f6f7e2ee4acca3fd883a9d4371d20cd982a0f8072d2151bd3bae3f1dd7"
+      url "https://github.com/srinandan/apigeecli/releases/download/v1.106-beta.1/apigeecli_v1.106-beta.1_Linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "12a34822dd87fa59ee41eaa37bd98a8ec9299af2f739722b26ee4ce6faabb126"
 
       def install
         bin.install "apigeecli"
