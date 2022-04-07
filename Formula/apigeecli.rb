@@ -10,7 +10,7 @@ class Apigeecli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/srinandan/apigeecli/releases/download/v1.107/apigeecli_v1.107_Darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "380f8f613b14a89cf1198120e4c7a1e5d60c5f7ae3334df5efa7b0ee5506da84"
+      sha256 "9621108ada1f1b744ff4e3a15e72e079c43f38fb76cebbd76f5cb81da66748fc"
 
       def install
         bin.install "apigeecli"
@@ -18,7 +18,7 @@ class Apigeecli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/srinandan/apigeecli/releases/download/v1.107/apigeecli_v1.107_Darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "3a4997a96e7cfddc8a7705ebaa9fccc7c97be27642d09f27587200d754a5dab6"
+      sha256 "5a3aa3b174fdd4e180752de81033ca248b07bdeeb6a9270eeb8670dfbf6fb098"
 
       def install
         bin.install "apigeecli"
@@ -29,7 +29,7 @@ class Apigeecli < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/srinandan/apigeecli/releases/download/v1.107/apigeecli_v1.107_Linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "d4988cc00948e59cd4af5fa1380b3e0518992587ceb20bc122012e29ea6b4dac"
+      sha256 "bd7f40911137f43c360a486ccf88f793c60a7464f0fe50973c02942fcdbb3687"
 
       def install
         bin.install "apigeecli"
@@ -37,7 +37,7 @@ class Apigeecli < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/srinandan/apigeecli/releases/download/v1.107/apigeecli_v1.107_Linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "9b1c702a1fc91bf289cedd312a122fa2f0ae22fdfec36d7553b9f7166488d726"
+      sha256 "a4469c1da603f453be51163b1efb7386e475e0b62e12291737ae88f0340aa18c"
 
       def install
         bin.install "apigeecli"
